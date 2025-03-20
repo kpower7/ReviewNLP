@@ -1,0 +1,9 @@
+Amazon_sentiment_optimized_v2.py:108: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  low_rating_df['cause'] = [cause_mapping[c] for c in all_causes]
+Accuracy: 0.86
+F1 Score: 0.85
+Test predictions with causes saved to CSV.
