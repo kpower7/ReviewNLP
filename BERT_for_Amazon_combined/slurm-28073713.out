@@ -1,0 +1,73 @@
+Amazon_sentiment_optimized_v3.py:20: DtypeWarning: Columns (9) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv('/home/gridsan/kpower/BERT_for_Amazon/Amazon_Grocery_Gourmet_Food_Review_Data.csv')
+Amazon_sentiment_optimized_v3.py:26: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['reviewTime'] = pd.to_datetime(df['reviewTime'], errors='coerce')
+Amazon_sentiment_optimized_v3.py:29: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['reviewText'] = df['reviewText'].astype(str)
+[nltk_data] Error loading stopwords: <urlopen error [Errno 101]
+[nltk_data]     Network is unreachable>
+[nltk_data] Error loading punkt: <urlopen error [Errno 101] Network is
+[nltk_data]     unreachable>
+[nltk_data] Error loading wordnet: <urlopen error [Errno 101] Network
+[nltk_data]     is unreachable>
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:337: MarkupResemblesLocatorWarning: "." looks like a directory name, not markup. You may want to open a file found in this directory and pass the filehandle into Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B000XBCBW6/ref=cm_cr_ryp_prd_ttl_sol_12" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B001I7MVG0/ref=cm_cr_ryp_prd_ttl_sol_125" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B002TXT50W/ref=cm_cr_ryp_prd_ttl_sol_13" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B00269UWFG/ref=cm_cr_ryp_prd_ttl_sol_0" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "http://www.fda.gov/ICECI/EnforcementActions/WarningLetters/ucm382794.htm" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B0044MNYIK/ref=cm_cr_ryp_prd_ttl_sol_11" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "http://www.amazon.com/Reber-Mozart-Kugel-Piece-Cello/dp/B005LW4NCI?ie=UTF8&psc=1&redirect=true&ref_=oh_aui_search_detailpage" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "http://dev.kerrygoldusa.com/faq/#qa34" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B00ARC4U02/ref=cm_cr_ryp_prd_ttl_sol_132" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B00BQ7D1JI/ref=cm_cr_ryp_prd_ttl_sol_159" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "http://www.amazon.com/gp/product/B007PE7AUW?redirect=true&ref_=cm_cr_ryp_prd_ttl_sol_1" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B00DVWWS7C/ref=cm_cr_ryp_prd_ttl_sol_27" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B00PMUNERY/ref=cm_cr_ryp_prd_ttl_sol_18" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "http://www.amazon.com/gp/product/B00430EJR8?redirect=true&ref_=cm_cr_ryp_prd_ttl_sol_0" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B0046GZM8O/ref=cm_cr_ryp_prd_ttl_sol_17" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B001CZ6CFY/ref=cm_cr_ryp_prd_ttl_sol_10" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:337: MarkupResemblesLocatorWarning: "." looks like a directory name, not markup. You may want to open a file found in this directory and pass the filehandle into Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "http://diabeticfriendly.com" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "http://www.organiclifestylemagazine.com/dangerously-high-arsenic-levels-found-in-rice/" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/gp/product/B008JO2QEW/ref=cm_cr_ryp_prd_ttl_sol_1" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/bs4/__init__.py:431: MarkupResemblesLocatorWarning: "https://www.amazon.com/dp/B005LURDJK/ref=cm_cr_ryp_prd_ttl_sol_39" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client like requests to get the document behind the URL, and feed that document to Beautiful Soup.
+  warnings.warn(
+Amazon_sentiment_optimized_v3.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  low_rating_df['cause'] = [cause_mapping[c] for c in all_causes]
+Accuracy: 0.86
+F1 Score: 0.85
+Test predictions with causes saved to CSV.
